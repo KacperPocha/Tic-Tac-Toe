@@ -1,0 +1,285 @@
+#window{
+    background-color: rgba(214, 214, 214, 0.854);
+    height: 85vh;
+    border-radius: 50px;
+    box-shadow: 0px 0px 25px 0px rgba(66, 68, 90, 1);
+    filter: blur(3px);
+
+}
+
+#popUp{
+    z-index: 1;
+    background-color: rgba(214, 214, 214, 0.854);
+    box-shadow: 8px 0px 60px 13px rgb(101, 101, 101);
+    border-radius: 50px;
+
+}
+
+
+#players{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#symbol{
+    height: 30px;
+    width: 30px;
+}
+.selectButton{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 15px;
+    border: 0px;
+}
+
+.selectButton:hover{
+    background-color: rgba(159, 136, 136, 0.854);
+    scale: 1.1;
+}
+
+.info{
+    color: black;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.submit{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 2px;
+    border-radius: 10px;
+    border: 0px;
+}
+
+.submit:hover{
+    background-color: rgba(159, 136, 136, 0.854);
+    scale: 1.1;
+}
+
+@media (max-width: 504px) {
+    #player1Text{
+        margin: 30px;
+        font-size: 30px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    #player2Text{
+        position: absolute;
+        left: 50%;
+        top: 80%;
+        transform: translate(-50%, -20%);
+        font-size: 30px;
+        font-weight: 600;
+    
+    }
+    
+    #result{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        margin-top: -20px;
+        font-size: 20px;
+        font-weight: 500;
+        opacity: 0.8;
+    }
+
+
+    .field{
+        background:rgb(148, 148, 148);
+        opacity: 0.5;
+        width: 46px;
+        height:46px;
+        margin :5px
+        
+    }
+
+    #fields:hover {
+        scale: 1.03;
+        box-shadow: 0px 0px 25px 9px rgba(66, 68, 90, 1);
+    }
+
+    .symbols{
+        max-width: 100%;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    .nickSymbol{
+        width: 30px;
+        height: 30px;
+    }
+
+}
+
+@media (min-width: 504.1px) and (max-width: 800px) {
+    #player1Text{
+        position: absolute;
+        text-align: left;
+        margin: 30px;
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    #player2Text{
+        text-align: right;
+        margin: 30px;
+        font-size: 30px;
+        font-weight: 600;
+    
+    }
+    
+    #result{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        margin-top: 70px;
+        font-size: 30px;
+        font-weight: 500;
+        opacity: 0.8;
+    }
+
+
+    .field{
+        background: rgb(148, 148, 148);
+        opacity: 0.5;
+        width: 75px;
+        height: 75px;
+        margin :5px
+        
+    }
+
+    #fields:hover {
+        scale: 1.03;
+        box-shadow: 0px 0px 25px 9px rgba(66, 68, 90, 1);
+    }
+
+    .symbols{
+        max-width: 100%;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    .nickSymbol{
+        width: 30px;
+        height: 30px;
+    }
+
+}
+
+@media (min-width: 800.1px) and (max-width: 1200px) {
+    #player1Text{
+        position: absolute;
+        text-align: left;
+        margin: 20px;
+        font-size: 40px;
+        font-weight: 600;
+    }
+
+    #player2Text{
+        text-align: right;
+        margin: 20px;
+        font-size: 40px;
+        font-weight: 600;
+    
+    }
+    
+    #result{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        margin-top: 20px;
+        font-size: 40px;
+        font-weight: 500;
+        opacity: 0.8;
+    }
+
+
+    .field{
+        background: rgb(148, 148, 148);
+        opacity: 0.5;
+        width: 100px;
+        height: 100px;
+        margin :5px
+        
+    }
+
+    #fields:hover {
+        scale: 1.03;
+        box-shadow: 0px 0px 25px 9px rgba(66, 68, 90, 1);
+    }
+
+    .symbols{
+        max-width: 100%;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    .nickSymbol{
+        width: 35px;
+        height: 35px;
+    }
+    
+}
+
+@media (min-width: 1200.1px){
+    #player1Text{
+        position: absolute;
+        text-align: left;
+        margin: 20px;
+        font-size: 50px;
+        font-weight: 600;
+    }
+
+    #player2Text{
+        text-align: right;
+        margin: 20px;
+        font-size: 50px;
+        font-weight: 600;
+    
+    }
+    
+    #result{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        margin-top: 20px;
+        font-size: 50px;
+        font-weight: 500;
+        opacity: 0.8;
+    }
+
+
+    .field{
+        background: rgb(148, 148, 148);
+        opacity: 0.5;
+        width: 110px;
+        height: 110px;
+        margin :5px
+        
+    }
+
+    #fields:hover {
+        scale: 1.03;
+        box-shadow: 0px 0px 25px 9px rgba(66, 68, 90, 1);
+    }
+
+    .symbols{
+        max-width: 100%;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    .nickSymbol{
+        width: 50px;
+        height: 50px;
+    }
+
+}
+    
+
+
